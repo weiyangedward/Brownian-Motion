@@ -1,0 +1,18 @@
+This is an implementation of Brownian Motion (BM) model presented in paper: 
+
+Felsenstein J. Maximum-likelihood estimation of evolutionary trees from continuous characters. Am J Hum Genet. 1973;25: 471–492.
+
+Note that currently code uses a lot of optimization to compute a Maximum likelihood estimate (MLE) for BM.
+
+This implementation uses a 'batch' mode that allows user to compute MLE for more than one dataset, which provides a powerful tool to compare different evolutionary events in one-go.
+
+Please note that a gsl library is needed when compile this code.
+
+To compile code:
+>> make clean
+>> make
+
+To run code:
+usage: ./bin/MLnoPrior <tree> <motif tab> <num of spe> <num of vectors>
+
+An example to run this code is provided in the './example' folder

@@ -1,0 +1,5 @@
+## run BM model using a tree with one sigma
+../bin/MLnoPrior bee9.1rate.preOrderTree motifScore.tab 9 1 > oneRate.out
+
+## run BM model using a tree with two sigmas
+../bin/MLnoPrior bee9.2rate.preOrderTree motifScore.tab 9 2 > twoRate.out
